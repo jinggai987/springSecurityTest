@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/login}" method="post">
+    <div class="field">
+        <label>Username</label>
+        <div class="ui left icon input">
+            <input type="text" placeholder="Username" name="username">
+            <i class="user icon"></i>
+        </div>
+    </div>
+    <div class="field">
+        <label>Password</label>
+        <div class="ui left icon input">
+            <input type="password" name="password">
+            <i class="lock icon"></i>
+        </div>
+    </div>
+
+    <input type="checkbox" name="remember"> 记住我
+    <input type="submit" class="ui blue submit button"/>
+
+</form>
+</body>
+</html>
